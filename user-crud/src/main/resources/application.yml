@@ -1,0 +1,35 @@
+server:
+    servlet:
+        encoding:
+            force: true
+spring:
+    datasource:
+        driverClassName: org.postgresql.Driver
+        hikari:
+            maximum-pool-size: 25
+            minimum-idle: 5
+        password: LRCmNXvWPb4V2Faquc3SmhJU
+        url: ''
+        username: postgres
+    flyway:
+        enabled: true
+        out-of-order: true
+    jpa:
+        database: default
+        hibernate:
+            ddl-auto: validate
+        properties:
+            hibernate:
+                format_sql: true
+                jdbc:
+                    lob:
+                        non_contextual_creation: true
+        show-sql: true
+    profiles:
+        active: localhost
+    sql:
+        init:
+            platform: postgres
+    web:
+        resources:
+            add-mappings: false

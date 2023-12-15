@@ -1,0 +1,3 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:6432/user-crud-test
